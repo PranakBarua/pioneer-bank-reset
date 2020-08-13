@@ -76,7 +76,6 @@
         const depButton=document.getElementById("depositButton");
         depButton.addEventListener("click",function(){
             const AmountNumber=getAmountInput("depositAmount");
-
             UpdateSpanText("currentDeposit",AmountNumber)
             UpdateSpanText("currentBalance",AmountNumber)
 
@@ -100,6 +99,7 @@
             const amountNumber=parseFloat(amount);
             return amountNumber;
         }
+
         function UpdateSpanText(id,Amount){
             const currentAmount=document.getElementById(id).innerText;
             const currentAmountNumber=parseFloat(currentAmount);
